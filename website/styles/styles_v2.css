@@ -1,0 +1,205 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f8f8f8; /* Off-white background */
+    color: #333; /* Dark grey text color */
+}
+
+.banner {
+    background-color: #333; /* Dark charcoal grey */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.banner a { /* Style links in the banner */
+    color: #f9f9f9; /* White link color */
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #e0e0e0; /* Light grey */
+    width: 190px; /* Adjust as needed */
+    transition: left 0.5s ease-in-out; /* Smooth transition for sidebar */
+    position: fixed; /* Keep sidebar in place */
+    left: 0;
+    top: 80px; /* Adjust based on banner height */
+    height: calc(100vh - 80px); /* Adjust based on banner height */
+    overflow-y: auto; /* Add scrollbar if content overflows */
+}
+
+.sidebar.hidden {
+    left: -250px; /* Hide sidebar off-screen */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar h {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #455055;
+    color: #f8f8f8;
+    border-bottom: 1px solid #ddd; /* Subtle separator */
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit; /* Inherit color from body */
+    border-bottom: 1px solid #ddd; /* Subtle separator */
+}
+
+.sidebar .nested {
+    display: none; /* Initially hide nested links */
+    padding-left: 20px; /* Indent nested links */
+}
+
+.sidebar a:hover {
+    background-color: #d4d4d4; /* Subtle hover effect */
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    margin-left: 250px; /* Adjust as needed to match sidebar width */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.nav-toggle {
+    display: none; /* Hide the navigation bar initially */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.nav-item {
+    border-bottom: 1px solid #ddd; /* Subtle separator */
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; /* Indicate that it's clickable */
+}
+
+.nav-content {
+    display: none; /* Initially hide the content */
+    padding: 10px 20px; /* Add padding to the content */
+}
+
+.content-section {
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.content-header {
+    cursor: pointer; /* Indicate that it's clickable */
+    border-bottom: 1px solid #ddd; /* Add a subtle underline */
+}
+
+.content-text {
+    display: none; /* Initially hide the content */
+    padding-left: 20px; /* Add padding to the content */
+}
+
+.page-selection {
+    margin-bottom: 20px;
+}
+
+.page-list {
+    list-style: none;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+}
+
+.page-list li {
+    width: 100px;
+    padding: 1px;
+}
+
+.page-display {
+    flex-wrap: wrap; /* Allow iframes to wrap */
+}
+
+
+.incrementBtn {
+    margin-right: 3px; /* Add spacing between elements */
+    background-color: #d6d6d6;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.listresetBtn {
+    background-color: #ba211e; 
+    color: white";
+} 
+
+
+.page-display iframe {
+    width: 48%; /* Adjust iframe width as needed */
+    height: 350px; /* Adjust iframe height as needed */
+    border: 1px solid #ddd;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px; /* Initially hide sidebar on small screens */
+    }
+
+    .sidebar.hidden {
+        left: 0; /* Show sidebar when toggled on small screens */
+    }
+
+    .content {
+        margin-left: 0; /* Remove margin when sidebar is hidden */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the navigation bar on small screens */
+    }
+}

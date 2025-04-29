@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f8f8f8; /* Off-white background for the main page */
+    color: #333; /* Dark grey text for readability */
+}
+
+.banner {
+    background-color: #333; /* Dark charcoal grey banner */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+.banner a { /* Style links in the banner */
+    color: #fff; /* White link color */
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #e0e0e0; /* Light grey sidebar */
+    width: 250px; /* Adjust width as needed */
+    padding: 20px;
+    position: fixed; /* Keep sidebar in place on scroll */
+    height: 100vh; /* Ensure full viewport height */
+    overflow-y: auto; /* Add scroll if content overflows */
+    transition: left 0.3s ease; /* Smooth transition for sidebar */
+    left: 0; /* Initial position */
+}
+
+.sidebar.hidden { /* Style for hidden sidebar */
+    left: -250px; /* Hide sidebar off-screen */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Link color matches sidebar background */
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.sidebar a:hover {
+    color: #333; /* Dark grey hover color for contrast */
+    background-color: #f8f8f8; /* Off-white hover background */
+}
+
+.content {
+    padding: 20px;
+    margin-left: 250px; /* Adjust margin to accommodate sidebar width */
+    flex-grow: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px; /* Hide sidebar initially on mobile */
+    }
+
+    .sidebar.hidden {
+        left: 0; /* Show sidebar when toggled on mobile */
+    }
+
+    .content {
+        margin-left: 0; /* Remove margin on mobile */
+    }
+}
