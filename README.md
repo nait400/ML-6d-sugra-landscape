@@ -25,7 +25,7 @@ Our results from the autoencoder can all be found in the companion GitHub page [
 ## References
 <a id="1">[1]</a>
 Y. Hamada and G. J. Loges,
-"**Towards a complete classification of 6D supergravities**,"
-JHEP *02*, 095 (2024)
+"*Towards a complete classification of 6D supergravities*,"
+JHEP **02**, 095 (2024)
 DOI:[10.1007/JHEP02(2024)095](https://doi.org/10.1007/JHEP02(2024)095)
 [[arXiv:2311.00868 [hep-th]](https://arxiv.org/abs/)].
