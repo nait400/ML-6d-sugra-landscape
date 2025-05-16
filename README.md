@@ -25,8 +25,8 @@ We find that both supervised and unsupervised training techniques are surprising
 * TensorFlow (2.13.0)
 * numba (0.58.1)
 * scikit-learn (1.3.1)
-** joblib (>= 1.1.1)
-** threadpoolctl (>= 2.0.0)
+- joblib (>= 1.1.1)
+- threadpoolctl (>= 2.0.0)
 
 
 ## Access to Analysis Results
