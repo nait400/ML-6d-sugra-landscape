@@ -25,9 +25,7 @@ We find that both supervised and unsupervised training techniques are surprising
 * TensorFlow (2.13.0)
 * numba (0.58.1)
 * scikit-learn (1.3.1)
-- joblib (>= 1.1.1)
-- threadpoolctl (>= 2.0.0)
-
+We provide example SLURM files used to submit to the HPRC's batch system [link](https://github.com/nait400/ML-6d-sugra-landscape/tree/471c80bf466e2870eca751a6c94f0a87a52f1e8f/src).
 
 ## Access to Analysis Results
 Our results from the autoencoder can all be found in the companion GitHub page [Machine Learning the 6d SUGRA Landscape](https://nait400.github.io/ML-6d-sugra-landscape/). To aid with navigation we provide a clickable image with links to the associated clusters as well as a "Comparison View" tool where separate clusters and/or multiple instances of the same cluster can be viewed one a single webpage side-by-side.
