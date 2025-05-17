@@ -41,6 +41,6 @@ The files labeled 'models-anomf-part*.zip' are a collection of models which pass
 - **orange:** models with $(n_H-n_V+28\lambda_-) < 0$
 - **light-blue:** models with $(n_H-n_V+28\lambda_-) = 0$
 
-![anomfree-models](data/models-anomfree_all-anomf-neg-zeros_v01.png)
+![anomfree-models](models-anomfree_all-anomf-neg-zeros_v01.png)
 
 
