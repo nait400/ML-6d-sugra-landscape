@@ -6,6 +6,7 @@ We find that both supervised and unsupervised training techniques are surprising
 
 ## Contents
 ### Machine Learning Models
+Each model is saved in three different formats (i.e. keras, hdf5, and saved_model). According to the TensorFlow developers, .keras is the recommended format, however, we provide all three formats for convenience. Please download whichever version of the model you prefer. It is not necessary to download more than one version of the model.
 * [Autoencoder](https://github.com/nait400/ML-6d-sugra-landscape/tree/ed5ff3bac3702e56fd47acdb9a4e04e9b0728d99/models/autoencoder)
 * [Classifier-0](https://github.com/nait400/ML-6d-sugra-landscape/tree/2cf57d227ee385b5f6d4dca624d816ac2cc5e431/models/classifier-0)
 * [Classifier-1](https://github.com/nait400/ML-6d-sugra-landscape/tree/2cf57d227ee385b5f6d4dca624d816ac2cc5e431/models/classifier-1)
