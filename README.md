@@ -26,6 +26,7 @@ Each model is saved in three different formats (i.e. keras, hdf5, and saved_mode
 * TensorFlow (2.13.0)
 * numba (0.58.1)
 * scikit-learn (1.3.1)
+* fastHDBSCAN ([current release](https://github.com/TutteInstitute/fast_hdbscan.git))
 We provide example SLURM files used to submit to the HPRC's batch system [link](https://github.com/nait400/ML-6d-sugra-landscape/tree/471c80bf466e2870eca751a6c94f0a87a52f1e8f/src).
 
 ## Access to Analysis Results
