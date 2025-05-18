@@ -21,8 +21,10 @@ batches = 100
 # Which activation function to use
 af = 'relu'
 # Folder to save network snapshots + images
-folder = 'classifier' + str(round(time.time()))
-
+model = 'classifier-0'
+folder = model + '_' + str(round(time.time()))
+# Folder with gram data
+gm_fldr = 'pre-labeled/' + model + '/'
 
 unit_data = []
 labels = []
@@ -31,8 +33,8 @@ indices = []
 data_shuffled = []
 
 # Load the Gram matrix data into memory
-mat0 = scipy.io.loadmat('grams_0.mat')
-mat1 = scipy.io.loadmat('grams_1.mat')
+mat0 = scipy.io.loadmat(gm_fldr + 'grams_0.mat')
+mat1 = scipy.io.loadmat(gm_fldr + 'grams_1.mat')
 
 # Choose a number of unit labeled solutions which matches the zero labeled ones
 unit_chosen = random.sample(range(len(mat1['matrix_name'])),len(mat0['matrix_name']))
