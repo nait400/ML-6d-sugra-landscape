@@ -17,7 +17,7 @@ Each model is saved in three different formats (i.e. keras, hdf5, and saved_mode
 ### Training Code
 **Note:** Code used for training was written to run on the High Performance Computing clusters (HPRC) at Texas A&M University so it will need to be modified (i.e. save file locations, reference folders, etc.). For convenience we provide the set of [Gram Matrices](https://github.com/nait400/ML-6d-sugra-landscape/tree/2cf57d227ee385b5f6d4dca624d816ac2cc5e431/src/GramMatrices) (in their original randomized order) that were used to train the autoencoder.
 * [Autoencoder Training](https://github.com/nait400/ML-6d-sugra-landscape/tree/2cf57d227ee385b5f6d4dca624d816ac2cc5e431/src/autoencoder) (requires gram-maxfeatures.csv and gram-minfeatures.csv)
-* [Classifiers](https://github.com/nait400/ML-6d-sugra-landscape/tree/2cf57d227ee385b5f6d4dca624d816ac2cc5e431/src/classifiers) (requires gram-maxfeatures.csv and gram-minfeatures.csv)
+* [Classifiers](https://github.com/nait400/ML-6d-sugra-landscape/tree/2cf57d227ee385b5f6d4dca624d816ac2cc5e431/src/classifiers)
 * [Clustering and Plot Generation](https://github.com/nait400/ML-6d-sugra-landscape/tree/2cf57d227ee385b5f6d4dca624d816ac2cc5e431/src/clustering)
 #### Dependencies
 * Python (>=3.8)
