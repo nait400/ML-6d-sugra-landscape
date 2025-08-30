@@ -1,6 +1,6 @@
 # Machine Learning the 6d SUGRA Landscape
 
-Machine Learning has been a useful tool for analysing large, and often complex, sets of data. They can reveal patterns hidden within the data providing a deeper level of understanding and information about the data. In [[2505.xxxxx](arxiv.com/hep-th/)] we apply these techniques to the set of admissable and anomaly-free 6-dimensional supergravity models with 8 supercharges generated in [[1]](#1). 
+Machine Learning has been a useful tool for analysing large, and often complex, sets of data. They can reveal patterns hidden within the data providing a deeper level of understanding and information about the data. In [[2505.16131](https://arxiv.org/abs/2505.16131)] we apply these techniques to the set of admissable and anomaly-free 6-dimensional supergravity models with 8 supercharges generated in [[1]](#1). 
 
 We find that both supervised and unsupervised training techniques are surprisingly effective at classification and auto-clustering the highly complex features associated with this patch of the landscape. Provided in this repository are the machine learning models and results referenced in our associated paper. Results from our analysis can be found in the [companion website](https://nait400.github.io/ML-6d-sugra-landscape/), also linked below. 
 
