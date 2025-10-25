@@ -5,6 +5,18 @@
 @media print{
 }
 
+.Text a:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.Text a:before {
+  content: "\2BC8";
+  color:grey;
+  display:inline-block;
+  padding-right: 5px;
+}
+
 .script {font-family: Mathematica5, cursive}
 .gothic {font-family: Mathematica6, Century Gothic}
+
 .doublestruck {font-family: Mathematica7}
