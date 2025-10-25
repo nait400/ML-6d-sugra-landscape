@@ -14,7 +14,7 @@
     </header>
 
     <div class="container">
-	<nav class="sidebar">
+		<nav class="sidebar">
             <ul>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Navigation Menu</a>
@@ -26,10 +26,10 @@
                     	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-02_2437669.html">LC-02</a></li>
                     	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-03_12132.html">LC-03</a></li>
                     	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-04_49015.html">LC-04</a></li>
-                   	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-05_1796387.html">LC-05</a></li>
-                  	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-06_877575.html">LC-06</a></li>
+                   		<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-05_1796387.html">LC-05</a></li>
+                  		<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-06_877575.html">LC-06</a></li>
                     	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-07_925035.html">LC-07</a></li>
-                   	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-08_239827.html">LC-08</a></li>
+                   		<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-08_239827.html">LC-08</a></li>
                     	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-09_323922.html">LC-09</a></li>
                     	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-10_14686.html">LC-10</a></li>
                     	<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-11_85869.html">LC-11</a></li>
@@ -70,7 +70,7 @@
                     <a href="#results" class="nav-link">Sub-clusters (LC-01)</a> 
                     <ul class="nested">
                         <li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-01/SubCluster-Analysis_LC-01.html">Image</a></li>
-		        <li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-01/HTMLLinks/test1_1.html">LSC-01</a></li>
+		        		<li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-01/HTMLLinks/test1_1.html">LSC-01</a></li>
                         <li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-01/HTMLLinks/test1_763.html">LSC-02</a></li>
                         <li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-01/HTMLLinks/test1_1428.html">LSC-03</a></li>
                         <li><a href="ClusterAnalysis_GramAE_LC-02-42/LC-01/HTMLLinks/test1_1676.html">LSC-04</a></li>
@@ -95,20 +95,25 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-		    <a href="#contact" class="nav-link">Links</a>
-		    <ul class="nested">
-		        <li><a href="#">Preprint</a></li>
+		    		<a href="#contact" class="nav-link">Links</a>
+		    		<ul class="nested">
+		        		<li><a href="https://arxiv.org/abs/2505.16131">Preprint</a></li>
                         <li><a href="https://github.com/nait400/ML-6d-sugra-landscape">Repository</a></li>
                     </ul>
-		</li>
+				</li>
             </ul>
         </nav>
 
         <main class="content">
-            <div class="page-selection">
-                <h2>Compare Clusters</h2>
-		<h3>Sub-clusters of LC-01</h3>
-		    <ul class="page-list">
+        <div class="page-selection">
+            <h2>Compare Clusters</h2>
+				<p>Explore clusters side-by-side to compare features across any combination of clusters. Clusters are organized into their Local Cluster (LC) and Local Sub-Cluster (LSC) groups as indicated below and you are free to choose any combination including multiple copies of the same group.</p>
+				<p><b>Choosing Clusters:</b> Either click on the name of your desired cluster to increase the number of copies of a specific group or you may type in the specific number of copies.</p>
+				<p><b>Viewing Selection:</b> Click on the <b>Compare</b> button below to display each of your selections in a separate panel. You can then navigate through each panel separately, however, the back button currently only works sequentially across all panels so navigating backwards should be done with care.</p>
+				<p>Clicking on <b>Reset Selections</b> will reset the entire page to it's original state.</p>
+				<p>&emsp;<b>Note:</b> It is recommended that you limit the total number of selections to at most 100.</p>
+			<h3>Sub-clusters of LC-01</h3>
+		    	<ul class="page-list">
                     <li>
                         <button class="incrementBtn" data-target="LC-01/HTMLLinks/test1_1">LSC-01</button>
                         <input type="number" id="LC-01/HTMLLinks/test1_1" value="0" min="0" max="10">
@@ -198,7 +203,7 @@
                         <input type="number" id="LC-01/HTMLLinks/test1_7219" value="0" min="0" max="10">
                     </li>
                 </ul>
-		<h3>Local Clusters (LC-02 - LC-42)</h3>
+			<h3>Local Clusters (LC-02 - LC-42)</h3>
                 <ul class="page-list">
                     <li>
                         <button class="incrementBtn" data-target="HTMLLinks/LC-02_2437669_1">LC-02</button>
@@ -365,11 +370,11 @@
                         <input type="number" id="HTMLLinks/LC-42_34528_1" value="0" min="0" max="10">
                     </li>
                 </ul>
-                <button id="compareBtn">Compare</button>
-		<button id="resetBtn">Reset Selections</button>
-            </div>
+            <button id="compareBtn">Compare</button>
+			<button id="resetBtn">Reset Selections</button>
+        </div>
 
-            <h2>Comparison</h2>
+        <h2>Comparison</h2>
             <div class="page-display">
                 <div id="iframeContainer"></div>
             </div>
@@ -379,3 +384,4 @@
     <script src="scripts/script.js"></script>
 </body>
 </html>
+
